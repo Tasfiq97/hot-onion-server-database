@@ -55,6 +55,12 @@ const foods=req.body
         const result=await foodCollection.deleteOne(query)
         res.json(result)
     })
+
+    // api get method 
+
+    app.get("/hello",async(req,res)=>{
+      res.send("hello from heroku");
+    })
       
     } 
     
