@@ -58,9 +58,7 @@ const foods=req.body
 
     // api get method 
 
-    app.get("/hello",async(req,res)=>{
-      res.send("hello from heroku");
-    })
+    
       
     } 
     
@@ -74,6 +72,9 @@ const foods=req.body
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
+})
+app.get("/hello",(req,res)=>{
+  res.send("hello from heroku");
 })
 
 app.listen(port, () => {
